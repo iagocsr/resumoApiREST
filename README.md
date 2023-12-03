@@ -1,6 +1,7 @@
 # resumoApiREST
 
 
+```markdown
 # API REST e RESTful
 
 ## Definição
@@ -86,3 +87,4 @@ API REST, ou Transferência de Estado Representacional, é um estilo de arquitet
 - **404 Not Found:** Recurso não encontrado.
 
 - **500 Internal Server Error:** Erro interno do servidor.
+```
