@@ -16,13 +16,13 @@ API REST, ou Transferência de Estado Representacional, é um estilo de arquitet
 
 - **Representação dos Recursos:** Os recursos podem ter diferentes representações, como JSON ou XML, e o cliente pode negociar a representação desejada com o servidor.
 
-## REST vs RESTful
+## Diferenças entre REST e RESTFul
 
 - **REST:** É um estilo arquitetural que define princípios para projetar sistemas distribuídos.
   
 - **RESTful:** Refere-se à aplicação efetiva dos princípios REST para o desenvolvimento de APIs, seguindo práticas e convenções do REST.
 
-## Verbos HTTP
+## HTTP verbs
 
 - **GET:** Obtém um recurso.
   
@@ -34,47 +34,7 @@ API REST, ou Transferência de Estado Representacional, é um estilo de arquitet
 
 - **PATCH:** Atualiza parcialmente um recurso.
 
-## Códigos de Status HTTP
-
-- **2xx (Sucesso):** Indica que a requisição foi bem-sucedida.
-
-- **3xx (Redirecionamento):** Indica a necessidade de tomar ações adicionais para completar a requisição.
-
-- **4xx (Erro do Cliente):** Indica um erro na requisição feita pelo cliente.
-
-- **5xx (Erro do Servidor):** Indica que o servidor falhou ao realizar uma requisição válida.
-
-## Exemplo Prático
-
-### Requisição GET:
-
-- **URI:** `/usuarios/123`
-
-- **Resposta:** Retorna os detalhes do usuário com ID 123.
-
-### Requisição POST:
-
-- **URI:** `/usuarios`
-
-- **Corpo:** `{ "nome": "João", "idade": 25 }`
-
-- **Resposta:** Cria um novo usuário com as informações fornecidas.
-
-### Requisição PUT:
-
-- **URI:** `/usuarios/123`
-
-- **Corpo:** `{ "nome": "João Silva" }`
-
-- **Resposta:** Atualiza o nome do usuário com ID 123.
-
-### Requisição DELETE:
-
-- **URI:** `/usuarios/123`
-
-- **Resposta:** Exclui o usuário com ID 123.
-
-## Códigos de Status HTTP
+## HTTP Status Code
 
 - **200 OK:** Requisição bem-sucedida.
 
@@ -88,3 +48,4 @@ API REST, ou Transferência de Estado Representacional, é um estilo de arquitet
 
 - **500 Internal Server Error:** Erro interno do servidor.
 ```
+Auto do resumo: Iago Cesar Pontes de Melo - 01507049
