@@ -1,76 +1,88 @@
 # resumoApiREST
 
 
-API REST e RESTful
-Definição
+# API REST e RESTful
+
+## Definição
+
 API REST, ou Transferência de Estado Representacional, é um estilo de arquitetura para o desenvolvimento de sistemas distribuídos. Baseia-se em princípios que promovem escalabilidade, simplicidade e independência entre componentes, facilitando a comunicação entre sistemas.
 
-Principais Características
-Sem Estado: Cada requisição do cliente contém todas as informações necessárias para ser entendida e processada pelo servidor, sem que este mantenha qualquer estado da sessão do cliente entre requisições.
+## Principais Características
 
-Recursos Identificáveis: Os recursos, sejam dados ou serviços, são identificados por URLs, e a manipulação desses recursos é realizada por meio de operações HTTP padrão.
+- **Sem Estado:** Cada requisição do cliente contém todas as informações necessárias para ser entendida e processada pelo servidor, sem que este mantenha qualquer estado da sessão do cliente entre requisições.
+  
+- **Recursos Identificáveis:** Os recursos, sejam dados ou serviços, são identificados por URLs, e a manipulação desses recursos é realizada por meio de operações HTTP padrão.
 
-Representação dos Recursos: Os recursos podem ter diferentes representações, como JSON ou XML, e o cliente pode negociar a representação desejada com o servidor.
+- **Representação dos Recursos:** Os recursos podem ter diferentes representações, como JSON ou XML, e o cliente pode negociar a representação desejada com o servidor.
 
-REST vs RESTful
-REST: É um estilo arquitetural que define princípios para projetar sistemas distribuídos.
+## REST vs RESTful
 
-RESTful: Refere-se à aplicação efetiva dos princípios REST para o desenvolvimento de APIs, seguindo práticas e convenções do REST.
+- **REST:** É um estilo arquitetural que define princípios para projetar sistemas distribuídos.
+  
+- **RESTful:** Refere-se à aplicação efetiva dos princípios REST para o desenvolvimento de APIs, seguindo práticas e convenções do REST.
 
-Verbos HTTP
-GET: Obtém um recurso.
+## Verbos HTTP
 
-POST: Cria um novo recurso.
+- **GET:** Obtém um recurso.
+  
+- **POST:** Cria um novo recurso.
 
-PUT: Atualiza um recurso existente.
+- **PUT:** Atualiza um recurso existente.
 
-DELETE: Exclui um recurso.
+- **DELETE:** Exclui um recurso.
 
-PATCH: Atualiza parcialmente um recurso.
+- **PATCH:** Atualiza parcialmente um recurso.
 
-Códigos de Status HTTP
-2xx (Sucesso): Indica que a requisição foi bem-sucedida.
+## Códigos de Status HTTP
 
-3xx (Redirecionamento): Indica a necessidade de tomar ações adicionais para completar a requisição.
+- **2xx (Sucesso):** Indica que a requisição foi bem-sucedida.
 
-4xx (Erro do Cliente): Indica um erro na requisição feita pelo cliente.
+- **3xx (Redirecionamento):** Indica a necessidade de tomar ações adicionais para completar a requisição.
 
-5xx (Erro do Servidor): Indica que o servidor falhou ao realizar uma requisição válida.
+- **4xx (Erro do Cliente):** Indica um erro na requisição feita pelo cliente.
 
-Exemplo Prático
-Requisição GET:
-URI: /usuarios/123
+- **5xx (Erro do Servidor):** Indica que o servidor falhou ao realizar uma requisição válida.
 
-Resposta: Retorna os detalhes do usuário com ID 123.
+## Exemplo Prático
 
-Requisição POST:
-URI: /usuarios
+### Requisição GET:
 
-Corpo: { "nome": "João", "idade": 25 }
+- **URI:** `/usuarios/123`
 
-Resposta: Cria um novo usuário com as informações fornecidas.
+- **Resposta:** Retorna os detalhes do usuário com ID 123.
 
-Requisição PUT:
-URI: /usuarios/123
+### Requisição POST:
 
-Corpo: { "nome": "João Silva" }
+- **URI:** `/usuarios`
 
-Resposta: Atualiza o nome do usuário com ID 123.
+- **Corpo:** `{ "nome": "João", "idade": 25 }`
 
-Requisição DELETE:
-URI: /usuarios/123
+- **Resposta:** Cria um novo usuário com as informações fornecidas.
 
-Resposta: Exclui o usuário com ID 123.
+### Requisição PUT:
 
-Códigos de Status HTTP
-200 OK: Requisição bem-sucedida.
+- **URI:** `/usuarios/123`
 
-201 Created: Recurso criado com sucesso.
+- **Corpo:** `{ "nome": "João Silva" }`
 
-204 No Content: Requisição bem-sucedida, sem conteúdo para retornar.
+- **Resposta:** Atualiza o nome do usuário com ID 123.
 
-400 Bad Request: Requisição inválida do cliente.
+### Requisição DELETE:
 
-404 Not Found: Recurso não encontrado.
+- **URI:** `/usuarios/123`
 
-500 Internal Server Error: Erro interno do servidor.
+- **Resposta:** Exclui o usuário com ID 123.
+
+## Códigos de Status HTTP
+
+- **200 OK:** Requisição bem-sucedida.
+
+- **201 Created:** Recurso criado com sucesso.
+
+- **204 No Content:** Requisição bem-sucedida, sem conteúdo para retornar.
+
+- **400 Bad Request:** Requisição inválida do cliente.
+
+- **404 Not Found:** Recurso não encontrado.
+
+- **500 Internal Server Error:** Erro interno do servidor.
